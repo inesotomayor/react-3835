@@ -24,7 +24,7 @@ const rootReducer = function(state = initialState, action) {
 
     case 'UPDATE_POST':
       state.posts.map(post => {
-        if (post.id === action.postId) {
+        if (post.id === action.post.id) {
           post = []
           return post.concat(action.post)
         }
@@ -34,7 +34,7 @@ const rootReducer = function(state = initialState, action) {
 
     case 'LIKE_POST':
       state.posts.map(post => {
-        if (post.id === action.postId) {
+        if (post.id === action.post.id) {
           return post.likes++
         }
         return post
@@ -43,7 +43,7 @@ const rootReducer = function(state = initialState, action) {
 
     case 'FAVORITE_POST':
       state.posts.map(post => {
-        if (post.id === action.postId) {
+        if (post.id === action.post.id) {
           return (post.favorite = true)
         }
         return post
@@ -65,10 +65,6 @@ const rootReducer = function(state = initialState, action) {
 
   return state
 }
-
-// redux.dispatch({
-//   type: 'GET_POST'
-// })
 
 const store = createStore(rootReducer)
 

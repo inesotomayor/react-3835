@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  padding: 30px;
+  font: 1.4rem/1.4 'Open Sans', sans-serif;
+}
+
+.App-intro {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ccc;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  background: #444;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.avatar {
+  margin-right: 30px;
+  text-align: center;
+}
+
+.avatar .photo {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.avatar .photo img {
+  width: 100%;
+}
+
+.avatar p {
+  margin: 0;
+}
+
+.formulario {
+  width: 500px;
+  margin: 30px auto;
+  background: #f7f7f7;
+  padding: 40px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  padding: 10px;
+  height: 40px;
+}
+
+.formulario textarea {
+  min-height: 100px;
+}
+
+.formulario button {
+  margin: 10px 10px 0;
+  font-size: 1.4rem;
+  padding: 8px 20px;
+}
+
+.titles-list {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.titles-list li {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.impar {
+  background: #fff;
+}
+.par {
+  background: #eee;
+}
+
+/* -------------------------------------
+/*  Placeholder hide
+/* ------------------------------------- */
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}

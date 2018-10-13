@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  font: 1.4rem/1.4 'Open Sans', sans-serif;
+  &-intro {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ccc;
+    text-align: center;
+    margin: 30px auto;
+  }
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  background: #444;
+  li {
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    a {
+      color: #fff;
+      &.active {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+header {
+  display: flex;
+  background: #444;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.avatar {
+  margin-right: 30px;
+  text-align: center;
+  .photo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+.formulario {
+  width: 80%;
+  margin: 30px auto;
+  background: #f7f7f7;
+  padding: 40px;
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    padding: 10px;
+    height: 40px;
+  }
+  textarea {
+    min-height: 100px;
+  }
+  button {
+    margin: 10px 10px 0;
+    font-size: 1.4rem;
+    padding: 8px 20px;
+  }
+}
+
+.posts {
+  padding: 0 30px 30px;
+  &-title {
+    text-align: center;
+    margin: 0;
+  }
+  &-list {
+    margin: 30px auto;
+    width: 70%;
+    list-style: none;
+    li {
+      padding: 20px;
+      transition: all 0.2s ease-in;
+      &:hover {
+        background: rgba(#000, 0.05);
+      }
+    }
+    a {
+      display: block;
+      color: #333;
+    }
+  }
+}
+
+.post-detail {
+  padding: 40px;
+}
+
+.impar {
+  background: #fff;
+}
+.par {
+  background: #eee;
+}
+
+/* -------------------------------------
+/*  Placeholder hide
+/* ------------------------------------- */
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
